@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+header {
+    background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Bathome1.png);
+    background-size: cover;
+    height: 100vh;
+}
+
+.navbar{
+    padding: 100px 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    color: #FFFFFF;
+    padding-right: 40px;
+    text-decoration: none;
+    font-size: 40px;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+}
+.texte{
+    color: #FFFFFF;
+    padding: 100px 440px;
+    text-align: center;
+    font-size: 18.8px;
+}
+.btn-conteneur{
+    display: flex;
+    padding-top: 50px;
+}
+.btn-conteneur button{
+    height: 50px;
+    width: 300px;
+}
