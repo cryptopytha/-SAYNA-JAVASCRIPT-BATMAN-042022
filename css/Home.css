@@ -42,13 +42,19 @@ nav a:nth-child(1){
     justify-content: space-between;
 }
 .texte{
+    opacity: 0;
     color: #FFFFFF;
     padding: 100px 440px;
     text-align: center;
     font-size: 18.8px;
 }
+.texte span{
+    font-weight: bold;
+    font-size: 22px;
+}
 .logo2{
     margin-right: 8px;
+    z-index: 10;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,6 +70,10 @@ nav a:nth-child(1){
     margin-right: 40px;
     height: 50px;
     width: 300px;
+    background-color: #ccc5c5c9;
+    border: none;
+    background-image: linear-gradient(to left, #b11313, #c54361, #c1749c, #b9a0bc, #c4c4c4);
+    color: #FFFFFF;
 }
 .logo3{
     margin: 100px;
@@ -76,6 +86,12 @@ nav a:nth-child(1){
     background-color: #000000;
 } 
 /* animation fade in */
+.super{
+    opacity: 0;
+}
+.crime{
+    opacity: 0;
+}
 .cine {
     opacity: 0;
     transform: translateX(-30px);
@@ -93,7 +109,7 @@ nav a:nth-child(1){
 .visible {
   opacity: 1;
   transform: translateX(0);
-  transition: 1s cubic-bezier(.5,0,0,1);  
+  transition: 3s cubic-bezier(.5,0,0,1);  
 }
 .zoom {
     transform: scale(0); 
@@ -136,49 +152,45 @@ nav a:nth-child(1){
     font-size: 20px;
 }
 .batman-img{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
 }
-
-
-/* #batman-slide{
-    background-image: url(./Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider1.png);
-    animation: js 2s ease-in-out infinite alternate forwards;
+.patt{
+    display: none;
+    position: absolute;
+    left: 128px;
+    top: 340px;
 }
-@keyframes js {
-    0% {
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider1.png);
-    }
-    10%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider2.png);
-    }
-    20%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider3.png);
-    }
-    30%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider4.png);
-    }
-    40%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider5.png);
-    }
-    60%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider6.png);
-    }
-    70%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider7.png);
-    }
-    80%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider8.png);
-    }
-    90%{
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider9.png);
-    }
-    100% {
-        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider10.png);
-    }
-} */
+.patt p{
+    background-image: linear-gradient(to left top, #b11313, #b60032, #b20050, #a3006d, #890089);
+    border-radius: 10px;
+    padding: 10px;
+}
+.ball{
+    display: none;
+    position: absolute;
+    
+    top: 340px;
+ } 
+.ball p{
+    background-image: linear-gradient(to left top, #b11313, #b60032, #b20050, #a3006d, #890089);
+    border-radius: 10px;
+    padding: 10px;
+}
+.rob1{
+    display: none;
+    position: absolute;
+    right: 120px;
+    bottom: 60px;
+}
+.rob1 p{
+    background-image: linear-gradient(to left top, #b11313, #b60032, #b20050, #a3006d, #890089);
+    border-radius: 10px;
+    padding: 10px;
+}
 
 
 #nemesis{
@@ -198,10 +210,44 @@ nav a:nth-child(1){
     font-size: 20px;
 }
 .nemesis-img{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding-bottom: 20px;
+}
+.dano{
+    display: none;
+    position: absolute;
+    left: 140px;
+    bottom: 40px;
+}
+.dano p{
+    background-image: linear-gradient(to left top, #b11313, #b60032, #b20050, #a3006d, #890089);
+    border-radius: 10px;
+    padding: 10px;
+}
+.ledger{
+    display: none;
+    position: absolute;
+    left: 620px;
+    bottom: 40px;
+}
+.ledger p{
+    background-image: linear-gradient(to left top, #b11313, #b60032, #b20050, #a3006d, #890089);
+    border-radius: 10px;
+    padding: 10px;
+}
+.potter{
+    display: none;
+    position: absolute;
+    right: 120px;
+    bottom: 40px;
+}
+.potter p{
+    background-image: linear-gradient(to left top, #b11313, #b60032, #b20050, #a3006d, #890089);
+    border-radius: 10px;
+    padding: 10px;
 }
 
 #multimedia{
@@ -295,9 +341,18 @@ form select{
 select {
     color: #c4c4c4;
 }
+.in button{
+    background-color: inherit;
+    border-image:  linear-gradient(to left, #6961bc, #b078b9, #d999ba, #efc2c9, #fbedeb);
+    border-image-slice: 1;
+    width: 200px;
+    height: 200px;
+}
 .btn2{
     margin-left: 200px;
     margin-bottom: 20px;
+    border: none;
+    background-image: linear-gradient(to right, #c4c4c4, #b9a0bc, #c1749c, #c54361, #b11313);
     height: 40px;
     width: 200px;
 }

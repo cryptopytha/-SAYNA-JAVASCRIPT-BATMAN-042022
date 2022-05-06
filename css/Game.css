@@ -4,16 +4,19 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     
 }
 
 header {
-    background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Bathome1.png);
+    background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Game/Batgame1.png);
     background-size: cover;
     height: 110vh;
 }
-
 .navbar{
     padding: 100px 250px;
     display: flex;
@@ -26,38 +29,113 @@ nav a{
     text-decoration: none;
     font-size: 40px;
 }
-nav a:nth-child(1){
+nav a:nth-child(2){
     text-decoration: underline;
 }
 .header-content{
     display: flex;
     justify-content: space-between;
 }
-/* .texte{
-    color: #FFFFFF;
-    padding: 100px 440px;
-    text-align: center;
-    font-size: 18.8px;
-} */
 .logo2{
-    margin-right: 8px;
+    position: relative;
+    margin-left: 1200px;
+    top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: #FFFFFF;
 }
-.btn-conteneur{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 50px;
-}
-.btn-conteneur button{
-    margin-right: 40px;
-    height: 50px;
-    width: 300px;
-}
 .logo3{
-    margin: 100px;
+    margin-top: 350px;
     text-align: center;
+}
+
+
+main{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+#quize1{
+    margin-left: 160px;
+}
+#quize1 h1{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 40px;
+}
+.quize-content{
+    padding-bottom: 40px;
+    font-size: 22px;
+}
+.quize-content h4{
+    padding-bottom: 40px;
+}
+.quize-content p{
+    background-color: grey;
+    width: 36%;
+    margin-bottom: 10px;
+    height: 40px;
+    padding: 10px;
+}
+/* .quize-content input{
+    width:100%;
+} */
+
+#quize2{
+    margin-top: 80px;
+    margin-left: 160px;
+}
+#quize2 h1{
+    padding-bottom: 40px;
+}
+.chevalier {
+    margin-left: 80px;
+}
+
+main button{
+    width: 300px;
+    height: 60px;
+    background-image: linear-gradient(to right, #c4c4c4, #b9a0bc, #c1749c, #c54361, #b11313);
+    margin-top: 100px;
+    margin-left: 600px;
+}
+
+footer{
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.copy p{
+    padding-top: 350px;
+    padding-left: 300PX;
+}
+#footer{
+    padding-top: 80px;
+    padding-bottom: 50PX;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon-footer1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 200px;
+}
+.icon-footer1 a {
+    margin-right: 20px;
+}
+.icon-footer2{
+    padding-right: 200px;
+}
+.icon-footer2 i{
+   margin-right: 20px;
+}
+.in{
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+.in button{
+
+    height: 30px;
+    width: 150px;
 }

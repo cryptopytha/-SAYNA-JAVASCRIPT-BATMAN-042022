@@ -16,15 +16,54 @@ for (let i=0; i < surligne.length; i++) {
 // zoom
 
 let batman = document.getElementsByClassName('img');
-for (let i = 0; i<batman.length; i++) {
-    let image = batman[i];
-    image.addEventListener('mouseover', function () {
-        image.style.transform ='scale(1.2)'
-    });
-    image.addEventListener('mouseout', function () {
-        image.style.transform ='scale(1)'
-    });
-}
+
+let image1 = batman[0];
+let image2 = batman[1];
+let image3 = batman[2];
+
+let patt = document.querySelector('.patt');
+let ball  = document.querySelector('.ball');
+let rob = document.querySelector('.rob1');
+
+image1.addEventListener('mouseover', function () {
+
+    image1.style.transform ='scale(1.2)';
+    patt.style.display='block';
+
+});
+image1.addEventListener('mouseout', function () {
+
+    image1.style.transform ='scale(1)';
+    patt.style.display='none';
+
+});
+
+image2.addEventListener('mouseover', function () {
+
+    image2.style.transform ='scale(1.2)';
+    ball.style.display='block';
+
+});
+image2.addEventListener('mouseout', function () {
+
+    image2.style.transform ='scale(1)';
+    ball.style.display='none';
+
+});
+
+image3.addEventListener('mouseover', function () {
+
+    image3.style.transform ='scale(1.2)';
+    rob.style.display='block';
+
+});
+image3.addEventListener('mouseout', function () {
+
+    image3.style.transform ='scale(1)';
+    rob.style.display='none';
+
+});
+
 
 //scrool 
 
@@ -55,6 +94,9 @@ let options = {
     })
  }
 let observer = new IntersectionObserver(handelIntersect, options);
+observer.observe(document.querySelector('.texte'));
+observer.observe(document.querySelector('.super'));
+observer.observe(document.querySelector('.crime'));
 observer.observe(document.querySelector('.cine'));
 observer.observe(document.querySelector('.neme'));
 observer.observe(document.querySelector('.multi'));
@@ -77,7 +119,7 @@ observer1.observe(document.querySelector('.carte'));
 observer1.observe(document.querySelector('.paul'));
 observer1.observe(document.querySelector('.ray'));
 observer1.observe(document.querySelector('.robert'));
-observer1.observe(document.querySelector('.once'));
+// observer1.observe(document.querySelector('.once'));
 
 //formulaire
 document.getElementById("go").addEventListener('click', function (py){
