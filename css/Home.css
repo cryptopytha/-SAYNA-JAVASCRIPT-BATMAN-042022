@@ -4,15 +4,23 @@
     box-sizing: border-box;
 }
 
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 body {
     
 }
+
 
 header {
     background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Bathome1.png);
     background-size: cover;
     height: 110vh;
 }
+
 
 .navbar{
     padding: 100px 250px;
@@ -62,9 +70,62 @@ nav a:nth-child(1){
     text-align: center;
 }
 
+
 #batman{
     color: #FFFFFF;
     background-color: #000000;
+} 
+/* animation fade in */
+.cine {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.neme {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.multi {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+
+
+.visible {
+  opacity: 1;
+  transform: translateX(0);
+  transition: 1s cubic-bezier(.5,0,0,1);  
+}
+.zoom {
+    transform: scale(0); 
+}
+.man{
+    transform: scale(0); 
+}
+.home4 {
+    transform: scale(0); 
+}
+.carte {
+    transform: scale(0); 
+}
+
+.slider1 {
+    transform: scale(0); 
+}
+.paul {
+    transform: scale(0); 
+}
+.ray {
+    transform: scale(0); 
+}
+.robert {
+    transform: scale(0); 
+}
+.once {
+    transform: scale(0); 
+}
+.zoom-visible {
+    transform: scale(1); 
+    transition: 1s;
 }
 .batman-content{
     margin-left: 100px;
@@ -80,6 +141,45 @@ nav a:nth-child(1){
     align-items: center;
     padding-bottom: 20px;
 }
+
+
+/* #batman-slide{
+    background-image: url(./Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider1.png);
+    animation: js 2s ease-in-out infinite alternate forwards;
+}
+@keyframes js {
+    0% {
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider1.png);
+    }
+    10%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider2.png);
+    }
+    20%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider3.png);
+    }
+    30%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider4.png);
+    }
+    40%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider5.png);
+    }
+    60%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider6.png);
+    }
+    70%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider7.png);
+    }
+    80%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider8.png);
+    }
+    90%{
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider9.png);
+    }
+    100% {
+        background-image: url(/Assets-20220505T045530Z-001/Assets/Illustrations/Home/Batslider10.png);
+    }
+} */
+
 
 #nemesis{
     color: #FFFFFF;
@@ -132,6 +232,10 @@ nav a:nth-child(1){
     align-items: center;
 }
 
+
+.active{
+    display: inline-flex !important;
+}
 .none{
     display: none;
     /* margin-left: 400px; */
@@ -147,6 +251,7 @@ nav a:nth-child(1){
 }
 
 #contact{
+    position: relative;
     background-image: linear-gradient(to right top, #19587d, #56708f, #8089a1, #a4a6b2, #c4c4c4);
     height: auto;
 }
@@ -168,6 +273,11 @@ form p{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+#erreur{
+    color: red;
+    font-size: 20px;
+    padding-left: 200px;
+}
 form .ligne input{
     background-color: inherit;
     border-left: none;
@@ -184,6 +294,18 @@ form select{
 }
 select {
     color: #c4c4c4;
+}
+.btn2{
+    margin-left: 200px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 200px;
+}
+.confirmation{
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 400px;
 }
 
 footer{
@@ -245,10 +367,4 @@ footer{
 
     height: 30px;
     width: 150px;
-}
-.btn2{
-    margin-left: 600px;
-    margin-bottom: 20px;
-    height: 40px;
-    width: 200px;
 }
