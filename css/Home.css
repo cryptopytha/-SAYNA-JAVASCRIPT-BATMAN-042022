@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,7 +15,7 @@ html{
 
 
 body {
-    
+    font-family: 'Rajdhani', sans-serif;
 }
 
 
@@ -40,6 +44,9 @@ nav a:nth-child(1){
 .header-content{
     display: flex;
     justify-content: space-between;
+}
+h1{
+    font-family: 'Rajdhani', sans-serif;
 }
 .texte{
     opacity: 0;
@@ -82,6 +89,7 @@ nav a:nth-child(1){
     padding-top: 50px;
 }
 .btn-conteneur button{
+    font-family: 'Rajdhani', sans-serif;
     margin-right: 40px;
     height: 50px;
     width: 300px;

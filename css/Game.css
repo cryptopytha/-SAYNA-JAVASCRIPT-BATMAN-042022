@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -9,7 +13,7 @@ html{
 }
 
 body {
-    
+    font-family: 'Rajdhani', sans-serif;
 }
 
 header {
@@ -40,6 +44,93 @@ nav a:nth-child(2){
     margin-left: 200px;
 
 }
+h1{
+    font-family: 'Rajdhani', sans-serif;
+}
+.texte-titre {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.niveau1 {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.qst {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.har {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.face {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.il {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.tim {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.jack {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.des {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.le {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.sa {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.cat {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.jon {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.ville {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.prod {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.app {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.inte {
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.noir{
+    opacity: 0;
+    transform: translateX(-30px);
+}
+.val{
+    transform: scale(0);
+}
+.val-zoom{
+    transform: scale(1);
+    transition: 3s;
+}
+.visible-game {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 3s cubic-bezier(.5,0,0,1);  
+  }
 .header-content{
     display: flex;
     justify-content: space-between;
@@ -69,8 +160,7 @@ nav a:nth-child(2){
     margin-top: 20px;
 }
 .logo3{
-    margin-top: 300px;
-    margin-bottom: 50px;
+    margin-top: 200px;
     text-align: center;
 }
 
