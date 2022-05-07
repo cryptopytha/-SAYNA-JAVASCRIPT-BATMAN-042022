@@ -65,11 +65,118 @@ image3.addEventListener('mouseout', function () {
 });
 
 
+let nemesis = document.getElementsByClassName('img-neme');
+
+let neme1 = nemesis[0];
+let neme2 = nemesis[1];
+let neme3 = nemesis[2];
+
+let dano = document.querySelector('.dano');
+let ledger  = document.querySelector('.ledger');
+let potter = document.querySelector('.potter');
+
+neme1.addEventListener('mouseover', function () {
+
+    neme1.style.transform ='scale(1.2)';
+    dano.style.display='block';
+
+});
+neme1.addEventListener('mouseout', function () {
+
+    neme1.style.transform ='scale(1)';
+    dano.style.display='none';
+
+});
+
+neme2.addEventListener('mouseover', function () {
+
+    neme2.style.transform ='scale(1.2)';
+    ledger.style.display='block';
+
+});
+neme2.addEventListener('mouseout', function () {
+
+    neme2.style.transform ='scale(1)';
+    ledger.style.display='none';
+
+});
+
+neme3.addEventListener('mouseover', function () {
+
+    neme3.style.transform ='scale(1.2)';
+    potter.style.display='block';
+
+});
+neme3.addEventListener('mouseout', function () {
+
+    neme3.style.transform ='scale(1)';
+    potter.style.display='none';
+
+});
+
+
+//hover
+
+let sauveSourir = document.querySelectorAll('.logo2m');
+
+let facebook = document.querySelector('.fb');
+let instagram = document.querySelector('.insta');
+let tweeter = document.querySelector('.tweet');
+
+
+facebook.addEventListener('mouseover' , function () {
+    facebook.style.color= '#FFFF00';
+});
+facebook.addEventListener('mouseout' , function () {
+    facebook.style.color= '#FFFFFF';
+});
+
+instagram.addEventListener('mouseover' , function () {
+    instagram.style.color= '#FFFF00';
+});
+instagram.addEventListener('mouseout' , function () {
+    instagram.style.color= '#FFFFFF';
+});
+
+tweeter.addEventListener('mouseover' , function () {
+    tweeter.style.color= '#FFFF00';
+});
+tweeter.addEventListener('mouseout' , function () {
+    tweeter.style.color= '#FFFFFF';
+});
+
+let sauveSourir2 = document.querySelectorAll('.icon-footer2');
+
+let facebookf = document.querySelector('.fofb');
+let instagramf = document.querySelector('.finsta');
+let tweeterf = document.querySelector('.ftweet');
+
+
+facebookf.addEventListener('mouseover' , function () {
+    facebookf.style.color= '#FFFF00';
+});
+facebookf.addEventListener('mouseout' , function () {
+    facebookf.style.color= '#FFFFFF';
+});
+
+instagramf.addEventListener('mouseover' , function () {
+    instagramf.style.color= '#FFFF00';
+});
+instagramf.addEventListener('mouseout' , function () {
+    instagramf.style.color= '#FFFFFF';
+});
+
+tweeterf.addEventListener('mouseover' , function () {
+    tweeterf.style.color= '#FFFF00';
+});
+tweeterf.addEventListener('mouseout' , function () {
+    tweeterf.style.color= '#FFFFFF';
+});
+
 //scrool 
 
 let tiret = document.querySelector('.logo2');
 window.addEventListener('scroll' , function() {
-    // console.log(scrollY)
     if (window.scrollY == "300"){
         tiret.style.position ='fixed';
     }
@@ -156,53 +263,5 @@ document.getElementById("go").addEventListener('click', function (py){
     }
 });
 
-//slide 
-const itemsImage = document.querySelectorAll('#multimedia .none');
-console.log(itemsImage);
-const nbSlide = itemsImage.length;
-const suivant = document.querySelector('.suiv');
-const precedent = document.querySelector('.prec');
-let count = 0;
-
-function slideSuivante(){
-    items[count].classList.remove('active');
-
-    if(count < nbSlide - 1){
-        count++;
-    } else {
-        count = 0;
-    }
-
-    items[count].classList.add('active')
-    console.log(count);
-    
-}
-suivant.addEventListener('click', slideSuivante)
-
-
-function slidePrecedente(){
-    items[count].classList.remove('active');
-
-    if(count > 0){
-        count--;
-    } else {
-        count = nbSlide - 1;
-    }
-
-    items[count].classList.add('active')
-    // console.log(count);
-    
-}
-precedent.addEventListener('click', slidePrecedente)
-
-function keyPress(e){
-    console.log(e);
-    
-    if(e.keyCode === 37){
-        slidePrecedente();
-    } else if(e.keyCode === 39){
-        slideSuivante();
-    }
-}
-document.addEventListener('keydown', keyPress)
+//slide des image
 
